@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Бронювання номера</title>
+</head>
+<body>
+<form action="#" method="post">
+    <fieldset style="width: 500px;">
+        <label for="name">Ім"я</label>
+        <input type="text" id="name" autofocus required> <br>
+        <label for="surname">Прізвище</label>
+        <input type="text" id="surname"> <br>
+        <label for="email">E-mail</label>
+        <input type="email" id="email"> <br>
+        <label for="tel">Номер телефону</label>
+        <input type="tel" id="tel" required> <br>
+        <label for="dateOfArr">Дата прибуття</label>
+        <input type="date" id="dateOfArr"> <br>
+        <label for="dateOfDep">Дата від"їзду</label>
+        <input type="date" id="dateOfDep"> <br>
+        <label>Кількість людей в номері</label>
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select> <br>
+        <p>
+            <lable>Виберіть тип номеру:</lable>
+            <br>
+            <input type="radio" id="lux" name="room">
+            <label for="lux">Люкс</label> <br>
+            <input type="radio" id="hlux" name="room">
+            <label for="hlux">Напівлюкс</label> <br>
+            <input type="radio" id="standart" name="room" checked>
+            <label for="standart">Стандарт</label>
+        </p>
+        <p>Додаткова інформація:</p>
+        <textarea cols="20"></textarea> <br>
+    </fieldset>
+    <p><input type="submit" value="Відправити"></p>
+</form>
+</body>
+</html>
