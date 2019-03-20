@@ -91,7 +91,7 @@ div.menu-item:hover > a, div.sub-menu-item:hover > a {
 
 .container {
     display: flex;
-    width: 1140px;
+    width: 80%;
     margin: 10px auto;
 }
 
@@ -131,7 +131,7 @@ aside.sidebar h3, section.main-content h3 {
 }
 
 aside.sidebar img {
-    width: 200px;
+    width: 80%;
 }
 
 aside.sidebar figure {
@@ -162,14 +162,37 @@ aside.sidebar figure {
 }
 
 footer {
-    width: 1140px;
+    width: 80%;
     margin: 0 auto;
     text-align: right;
     font-size: 12px;
 }
 
 .img-about {
-    width: 140px;
+    width: 25%;
     float: left;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    div.menu, .search {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 42px;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    aside.sidebar figcaption {
+        height: 100px;
+        overflow: auto;
+    }
+
+    .nav a.logo {
+        text-align: center;
+    }
 }
